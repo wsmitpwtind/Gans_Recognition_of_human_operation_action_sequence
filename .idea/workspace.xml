@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85c06991-e124-49ce-a4f0-df06834957bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/MNIST/processed/test.pt" beforeDir="false" afterPath="$PROJECT_DIR$/data/MNIST/processed/test.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/MNIST/processed/training.pt" beforeDir="false" afterPath="$PROJECT_DIR$/data/MNIST/processed/training.pt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeNet" beforeDir="false" afterPath="$PROJECT_DIR$/LeNet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +45,28 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.cv2">
+  <component name="RunManager" selected="Python.predict">
+    <configuration name="cv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mnist-demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cv2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mnist-demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,28 +102,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mnist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="mnist-demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mnist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cv2" />
         <item itemvalue="Python.predict" />
+        <item itemvalue="Python.cv" />
+        <item itemvalue="Python.cv2" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.mnist_data" />
-        <item itemvalue="Python.mnist" />
       </list>
     </recent_temporary>
   </component>
@@ -203,41 +199,45 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="516" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605092062947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="516" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605092062947" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1604491067850">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604491067850" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1604744942206">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1605013352119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1270" height="204" key="GridCell.Tab.0.bottom/-1440.118.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1604236650715" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604744942206" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605013352119" />
     <state width="1878" height="270" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1.22.1.-22@0.23.1920.1057" timestamp="1604281930483" />
     <state width="1878" height="270" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1604227680693" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1604744942206">
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1605013352119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1270" height="204" key="GridCell.Tab.0.center/-1440.118.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1604236650714" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604744942206" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605013352119" />
     <state width="1878" height="270" key="GridCell.Tab.0.center/0.23.1920.1057/-1.22.1.-22@0.23.1920.1057" timestamp="1604281930483" />
     <state width="1878" height="270" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1604227680692" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1604744942206">
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1605013352119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1270" height="204" key="GridCell.Tab.0.left/-1440.118.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1604236650714" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604744942206" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605013352119" />
     <state width="1878" height="270" key="GridCell.Tab.0.left/0.23.1920.1057/-1.22.1.-22@0.23.1920.1057" timestamp="1604281930483" />
     <state width="1878" height="270" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1604227680692" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1604744942206">
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1605013352119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1270" height="204" key="GridCell.Tab.0.right/-1440.118.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1604236650715" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604744942206" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605013352119" />
     <state width="1878" height="270" key="GridCell.Tab.0.right/0.23.1920.1057/-1.22.1.-22@0.23.1920.1057" timestamp="1604281930483" />
     <state width="1878" height="270" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1604227680693" />
-    <state x="270" y="55" key="SettingsEditor" timestamp="1604491085429">
+    <state x="270" y="55" key="SettingsEditor" timestamp="1605092051405">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604491085429" />
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605092051405" />
   </component>
 </project>

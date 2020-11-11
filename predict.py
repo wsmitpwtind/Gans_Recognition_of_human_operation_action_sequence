@@ -38,7 +38,6 @@ with torch.no_grad():
     input = cv2.imread('./predict/0.bmp', cv2.IMREAD_UNCHANGED)
     input = np.array(input)
     input = input[:,:,np.newaxis]
-    print(input)
     transform = transforms.Compose(
         [transforms.ToTensor(),
          transforms.Normalize((0.5,), (0.5,)),]
